@@ -1,0 +1,11 @@
+<h2>Add a new player destination:</h2>
+
+<p><%= form_with model: @blog do |form|%>
+  <%= form.label :destination %>
+  <%= form.text_field :destination %>
+  <%= form.label :content %>
+  <%= form.text_field :content %>
+  <%= form.submit "Add Destination" %>
+<% end %></p>
+
+<p><%= link_to 'Home', root_path%></p>
