@@ -18,8 +18,17 @@ class BlogController < ApplicationController
         end
     end
 
+
     def edit
         @blog = Blog.find(params[:id])
+
+    
+    def destroy
+        @blog = Blog.find(params[:id])
+        if @blog.destroy
+            redirect_to root_path
+        end
+
     end
     
     private
