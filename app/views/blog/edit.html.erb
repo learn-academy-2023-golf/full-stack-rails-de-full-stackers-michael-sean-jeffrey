@@ -1,0 +1,11 @@
+<h2>Edit a player destination:</h2>
+
+<p><%= form_with model: @blog, method: :patch do |form|%>
+  <%= form.label :destination %>
+  <%= form.text_field :title %>
+  <%= form.label :content %>
+  <%= form.text_field :content %>
+  <%= form.submit "Edit Destination" %>
+<% end %></p>
+
+<p><%= link_to 'Home', root_path%></p>
