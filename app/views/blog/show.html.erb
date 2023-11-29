@@ -1,3 +1,4 @@
 <h1><%= @blog.title %></h1>
 <h3><%= @blog.content %></h3>
 <p><%= link_to 'Home', root_path%></p>
+<p><%= button_to 'Remove Blog', delete_blog_path, method: :delete%></p>
